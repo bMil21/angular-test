@@ -1,0 +1,15 @@
+<section class="wrap">
+  <h1>Angular Test</h1>
+  <div class="nav">
+    <button mat-button routerLink="/meds"
+      [routerLinkActive]="['is-active']">
+      Medications
+    </button>
+    <button mat-button routerLink="/add-med"
+      [routerLinkActive]="['is-active']">
+      + Add Medication
+    </button>
+  </div>
+
+  <router-outlet></router-outlet>
+</section>

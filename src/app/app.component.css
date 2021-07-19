@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+.wrap {
+  padding: 16px;
+}
+.nav button {
+  margin: 8px;
+}
+.nav button.is-active {
+  color: #eee;
+  background-color: #333;
+}

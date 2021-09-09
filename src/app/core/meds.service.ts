@@ -14,6 +14,6 @@ export class MedsService {
   }
 
   addMed(med: Med): Observable<any> {
-    return; // replace with POST
+    return this.http.post(this._apiPath, med);
   }
 }

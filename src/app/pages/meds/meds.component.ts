@@ -18,7 +18,6 @@ export class MedsComponent implements OnInit {
 
   getMeds(): void {
     this.medsService.getMeds().subscribe(meds => {
-      console.log('meds', meds);
       this.meds = meds;
     });
   }

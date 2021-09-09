@@ -10,7 +10,7 @@ export class MedsService {
   constructor(private http: HttpClient) {}
 
   getMeds(): Observable<Med[]> {
-    return this.http.get(this._apiPath).pipe(map(obj => obj as Med[]));
+    return this.http.get<Med[]>(this._apiPath).pipe(map(meds => meds));
   }
 
   addMed(med: Med): Observable<any> {

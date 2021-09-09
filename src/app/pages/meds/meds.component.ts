@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MedsService } from '../../core/meds.service';
 import { Med } from '../../models/med';
 
 @Component({
@@ -10,15 +9,11 @@ import { Med } from '../../models/med';
 export class MedsComponent implements OnInit {
   public meds: Med[];
 
-  constructor(private medsService: MedsService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.getMeds();
-  }
+  ngOnInit() {}
 
   getMeds(): void {
-    this.medsService.getMeds().subscribe(meds => {
-      this.meds = meds;
-    });
+    //
   }
 }

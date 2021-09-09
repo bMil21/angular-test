@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Med } from '../models/med';
 
 @Injectable()
@@ -10,10 +10,10 @@ export class MedsService {
   constructor(private http: HttpClient) {}
 
   getMeds(): Observable<Med[]> {
-    return this.http.get<Med[]>(this._apiPath).pipe(map(meds => meds));
+    return; // replace with GET
   }
 
   addMed(med: Med): Observable<any> {
-    return this.http.post(this._apiPath, med);
+    return; // replace with POST
   }
 }
